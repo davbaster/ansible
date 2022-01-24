@@ -4,6 +4,11 @@
   hosts: webservers
   become: true
   tasks:
+    
+    - name: 1. Update APT Package Manager
+      apt:
+        update_cache: true
+
     - name: Install nginx
       package:
         name: nginx
