@@ -1,1 +1,3 @@
 .vagrant
+vault.yml
+vault-pass.txt
